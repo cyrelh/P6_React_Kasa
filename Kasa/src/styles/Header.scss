@@ -7,7 +7,30 @@ header{
     margin-top: 32px;
 }
 
-.under_header{
+.under-header{
     display: flex;
     justify-content: space-between;
+}
+
+.nav-links{
+    display: flex;
+    margin-top: 32px;
+    align-items: center;
+    justify-content: flex-end;
+    width: 15%;
+    gap: 22%;
+    font-weight: 500;
+    color: #FF6060;
+   & a {
+    text-decoration: none;
+    color: #000;
+    &.active {
+        text-decoration: underline;
+    }
+    &:hover{
+        text-decoration: underline;
+        color: #FF6060;
+
+    }
+}
 }
