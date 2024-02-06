@@ -1,4 +1,5 @@
 import Kasa from '../assets/logo-kasa.png'
+import '../styles/Header.scss'
 
 function Header() {
   return (
