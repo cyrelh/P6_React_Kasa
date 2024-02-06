@@ -1,0 +1,26 @@
+.footer-img-kasa{
+    background-color: #000000;
+    padding-bottom: 20%;
+}
+
+footer{
+    width: 100%;
+    background-color: #000000;
+    margin-top: 3%;
+    flex-grow: 1;
+}
+
+.footer-kasa{
+    display: grid;
+    justify-content: center;
+    padding-top: 57px;
+    padding-bottom: 38px;
+}
+
+.footer-logo {
+    display: grid;
+    justify-items: center;
+    p{
+    color: #FFF;
+    }
+}
