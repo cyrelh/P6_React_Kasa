@@ -1,8 +1,17 @@
-import React from 'react'
+import Header from '../components/Header.jsx'
+import Banner from '../components/Banner.jsx'
+import ImgAboutBanner from '../assets/about-banner.png'
+import Footer from '../components/Footer.jsx'
+
 
 function About() {
   return (
-    <div>About</div>
+    <div>    <Header/>
+    <Banner img={ImgAboutBanner}/>
+
+    <Footer/>
+    </div>
+
   )
 }
 
