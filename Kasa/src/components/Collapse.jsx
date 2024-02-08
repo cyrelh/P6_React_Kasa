@@ -13,9 +13,9 @@ function Collapse({name, para}) { // Définition du composant Collapse avec les 
                             <p>{name}</p> {/* Affichage du nom de la section */}
                             <img src={iconCollapse} // Définit la source de l'image de l'icône de collapse
                             alt={isOpen ? "collapse" : "uncollapse"} //Si isOpen est vrai, alors contenu est ouvert, donc l'alt est "collapse". Sinon, l'alt est "uncollapse"
-                            className={isOpen ? "collapse" : "uncollapse"} // Si isOpen est vrai, la classe est "collapse", sinon c'est "uncollapse". Ces classes  utilisées pour appliquer des styles à l'icône en fonction de son état
+                            className={isOpen ? "collapse" : "uncollapse"} // classes  utilisées pour appliquer des styles à l'icône en fonction de son état
                             onClick={() => setIsOpen(!isOpen)} /> 
-                            {/* gestionnaire d'événements pour clic sur l'icône. 
+                            {/* gestionnaire d'événements pour clic sur l'icône
                             Lorsque l'utilisateur clique sur l'icône, cette fonction est appelée pour inverser l'état d'ouverture (isOpen)
                             Cela signifie que si isOpen est vrai, il devient faux, et vice versa. */}
                         </div>
@@ -28,7 +28,7 @@ function Collapse({name, para}) { // Définition du composant Collapse avec les 
                         )}
                      {/* . Si para est effectivement un tableau, alors le code à l'intérieur de la condition est exécuté. */}
                         {Array.isArray(para) && (
-                            para.map((item, index) => ( // Pour chaque élément item du tableau, une fonction fléchée est utilisée pour générer un paragraphe <p> qui affiche cet élément
+                            para.map((item, index) => ( // Pour chaque élément item du tableau, une fonction => pour générer un <p> qui affiche cet élément
                                 <p key={item + index}>{item}</p> 
                                 //on crée paragraphe pour chaque élément du tableau para. 
                                 //La key = la concaténation de l'élément item et index ce qui garantit que chaque élément a une clé unique

@@ -13,7 +13,8 @@ function About() {
     <Banner img={ImgAboutBanner}/>
     <div className='conteneur-collapse'> {/* Début de la div pour contenir les composants Collapse */}
       {data.map((item) => ( // on utilise la méthode map pour parcourir chaque élément du tableau data
-        <Collapse key={item.name} name={item.name} para={item.reponse} /> // Pour chaque élément, on crée composant Collapse en passant le nom de la section (item.name) comme titre et le contenu de la section (item.reponse) comme propriété au composant.
+        <Collapse key={item.name} name={item.name} para={item.reponse} /> 
+      // Pour chaque élément, on crée composant Collapse en passant le nom de la section (item.name) comme titre et le contenu de la section (item.reponse) comme propriété au composant.
       ))}
     </div>
 
