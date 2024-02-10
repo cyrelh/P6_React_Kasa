@@ -1,7 +1,7 @@
-import Header from '../components/Header.jsx'
+// import Header from '../components/Header.jsx'
 import Banner from '../components/Banner.jsx'
 import ImgAboutBanner from '../assets/about-banner.png' // Import de l'image de la bannière
-import Footer from '../components/Footer.jsx'
+// import Footer from '../components/Footer.jsx'
 import Collapse from '../components/Collapse.jsx' //Import du composant Collapse
 
 
@@ -9,7 +9,8 @@ import Collapse from '../components/Collapse.jsx' //Import du composant Collapse
 
 function About() {
   return (
-    <div>    <Header/>
+    <div>    
+      {/* <Header/> */}
     <Banner img={ImgAboutBanner}/>
     <div className='conteneur-collapse'> {/* Début de la div pour contenir les composants Collapse */}
       {data.map((item) => ( // on utilise la méthode map pour parcourir chaque élément du tableau data
@@ -18,7 +19,7 @@ function About() {
       ))}
     </div>
 
-    <Footer/>
+    {/* <Footer/> */}
     </div>
 
   )

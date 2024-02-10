@@ -1,7 +1,5 @@
-import Header from '../components/Header.jsx'
 import Banner from '../components/Banner.jsx'
 import ImgHomeBanner from '../assets/home-banner.png'
-import Footer from '../components/Footer.jsx'
 import '../styles/HomePage.scss'
 
 import CardApartments from '../components/CardApartments.jsx'
@@ -23,7 +21,6 @@ function HomePage() {
 
   return (
     <div>
-              <Header/>       {/* Rendu du composant Header */}
               <Banner img={ImgHomeBanner} title='Chez vous, partout et ailleurs'/>       {/* Rendu du composant Banner avec l'image et le titre spécifiés */}
               <main>
                 <div className='conteneur-logements'>
@@ -43,7 +40,6 @@ function HomePage() {
                   }
                 </div>
               </main>
-              <Footer/>       {/* Rendu du composant Footer */}
     </div>
   )
 }

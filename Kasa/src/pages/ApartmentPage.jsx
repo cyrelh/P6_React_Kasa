@@ -1,8 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import Slideshow from '../components/Slideshow.jsx'
-import Header from '../components/Header.jsx'
-import Footer from '../components/Footer.jsx'
 import Collapse from '../components/Collapse.jsx'
 import ErrorPage from '../pages/ErrorPage.jsx'
 import '../styles/ApartmentPage.scss'
@@ -33,9 +31,7 @@ function ApartmentPage() {
 
   return (
     <div>
-      <Header/>
 
-      <Footer/>
     </div>
   )
 }
