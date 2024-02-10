@@ -5,12 +5,12 @@ import ReactDOM from 'react-dom/client'
 // Importation des composants nécessaires depuis 'react-router-dom'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // Importation des composants fonctionnels des pages
-import HomePage from '../pages/HomePage.jsx'
-import About from '../pages/About.jsx'
-import ErrorPage from '../pages/ErrorPage.jsx'
-import ApartmentPage from "../pages/ApartmentPage.jsx"
+import HomePage from '/src/pages/HomePage.jsx'
+import About from '/src/pages/About.jsx'
+import ErrorPage from '/src/pages/ErrorPage.jsx'
+import ApartmentPage from "/src/pages/ApartmentPage.jsx"
 // Importation des styles pour l'app
-import '../styles/main.scss'
+import '/src/styles/main.scss'
 
 // Création d'une racine React à l'élément avec l'ID 'root' dans le document
 // Cette méthode crée une racine React pour le rendu, ce qui permet une mise à jour efficace du DOM
