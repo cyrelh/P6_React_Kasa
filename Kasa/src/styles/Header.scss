@@ -1,6 +1,9 @@
 header{
-    margin-left: 4%;
-    margin-right: 4%;
+    width: 1240px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+ 
 }
 
 .logo-kasa{
@@ -17,13 +20,16 @@ header{
     margin-top: 32px;
     align-items: center;
     justify-content: flex-end;
-    width: 15%;
+    width: 30%;
     gap: 22%;
     font-weight: 500;
+    font-size: 24px;
     color: #FF6060;
    & a {
     text-decoration: none;
     color: #000;
+    flex-wrap: nowrap;
+
     &.active {
         text-decoration: underline;
     }

@@ -1,22 +1,21 @@
 .conteneur-logements{
     background-color: #F6F6F6;
-    margin-top: 2%;
     border-radius: 25px;
-    width: 100%;
+    width: 1240px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    padding: 4% 1.5%;
+    padding-top: 30px;
+    
 }
 
 .click-card{
-    height: 450px;
-    width: 90%;
+    height: 340px;
+    width: 340px;
     position: relative;
     margin-bottom: 11%;
 }
 
 main {
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 10%;
 }

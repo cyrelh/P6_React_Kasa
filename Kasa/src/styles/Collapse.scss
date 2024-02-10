@@ -59,7 +59,7 @@
         display: flex;
         align-items: center;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 24px;
     }
 }
 
@@ -71,10 +71,10 @@
     padding-right: 15px;
     padding-bottom: 15px;
     display: none;
-    transition: all 10s cubic-bezier(0,.99,1,0);
+    transition: all 1s cubic-bezier(0,.99,1,0);
 }
 
 .show{
     display: block;
-    transition: all 10s cubic-bezier(0,.99,1,0);
+    transition: all 1s /*cubic-bezier(0,.99,1,0)*/;
 }

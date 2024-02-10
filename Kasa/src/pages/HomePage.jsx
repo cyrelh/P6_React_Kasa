@@ -32,9 +32,9 @@ function HomePage() {
                   {logements.map(logement => {
                         return(
                             <Link to={`logement/${logement.id}`} key={logement.id} className='click-card'>
-                              {/*Cette partie enveloppe la carte de logement dans un composant Link, créant un lien vers la page de détail du logement. 
-                              L'attribut to => URL  destination basée sur ID unique de chaque logement. 
-                              L'attribut key ==> aide React à identifier chaque élément de la liste de manière unique  (good for performance)  */}
+                              {/*Cette partie enveloppe la carte de logement dans un composant Link, créant un lien vers la page de détail du logement
+                              L'attribut to => URL  destination basée sur ID unique de chaque logement
+                              L'attribut key ==> aide React à identifier chaque élément de la liste de manière unique  (good for performance)*/}
                                 <CardApartments cover={logement.cover} title={logement.title}/>
                                 {/*props cover et title sont passées au composant --> spécifie img de couverture et titre du logement */}
                             </Link>
