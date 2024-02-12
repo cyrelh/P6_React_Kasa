@@ -1,6 +1,6 @@
 .all-collapse{
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 5%;
+    margin-right: 1%;
     width: 80%;
 }
 
@@ -9,10 +9,7 @@
     transform: rotate(180deg);
     background-color: #ff6060;
     cursor: pointer;
-    width: 24px;
-    height: 13.71px;
-    padding-bottom: 15px;
-    padding-left: 10px;
+    height: 34px;
 
 }
 
@@ -21,45 +18,46 @@
     transition-duration: 0.5s;
     transform: rotate(360deg);
     cursor: pointer;
-    width: 24px;
-    height: 13.71px;
-    padding: 15px;
-    padding-right: 10px;
+    height: 34px;
+
 }
 
 .conteneur-collapse{
     display: grid;
     justify-items: center;
-    margin-top: 1%;
 }
 
 .collapse-content{
     background-color: #F6F6F6;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 20px 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.5s; /* Ajout d'une transition pour l'ensemble des propriétés CSS */
+
 }
 
 
 .collapse-banner{
     background-color: #FF6060;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    height: 34px;
+    border-radius: 5px;
+    margin-bottom: -12px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 15px;
+    padding: 10px 20px 10px 15px;
 
 }
 
 .collapse-banner-name{
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
     p{
         color: white;
         display: flex;
-        align-items: center;
         font-weight: 700;
         font-size: 24px;
+        line-height: 1px;
     }
 }
 
@@ -67,14 +65,19 @@
     color: #000;
     line-height: 150%;
     font-weight: 500;
+    padding-top: 8px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 15px;
-    display: none;
-    transition: all 1s cubic-bezier(0,.99,1,0);
-}
+    padding-bottom: 7px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition:
+        max-height 3s ease,
+        opacity 1s ease; /* Transition pour max-height et opacity */
+  }
 
 .show{
-    display: block;
-    transition: all 1s /*cubic-bezier(0,.99,1,0)*/;
-}
+    opacity: 1; /* Changement d'opacité pour rendre visible le contenu */
+    max-height: 200px; /* Valeur maximale de la hauteur, ajustez selon vos besoins */
+  }
