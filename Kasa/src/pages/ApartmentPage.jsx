@@ -78,7 +78,9 @@ function ApartmentPage() {
               <Collapse name="Description" para={logement && logement.description}/> {/* Cela vérifie si l'objet logement est défini. 
               Si c'est le cas, il vérifie si logement a une propriété description. Si c'est TRUE, l'expression renvoie la valeur de logement.description, sinon elle renvoie FALSE ou undefined */}
               {/* Si l'expression précédente est évaluée à TRUE, alors affiche composant Collapse avec le nom "Description" et la description du logement. Sinon, rien n'est rendu */}
-              <Collapse name="Équipements" para={logement && logement.equipments }/>
+              <Collapse name="Equipements" para={logement && logement.equipments && logement.equipments.map(eq => <li>{eq}</li>) }/>
+              {/* GROS BUG <Collapse name="Equipement" para={logement.equipments.map(eq => <li>{eq}</li>)} /> */}
+
             </div>
 
     </div>
