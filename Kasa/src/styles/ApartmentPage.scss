@@ -1,7 +1,7 @@
 .conteneur {
     display: flex;
     justify-content: center;
-    margin-top: 5%;
+    margin: 2% 8% 2% 7%;
 }
 
 .conteneur-scss {
@@ -12,17 +12,20 @@
 }
 
 .slide-scss {
-    width: 100%;
+    width: 98%;
     height: 100%;
     border-radius: 25px;
     background-position: center;
     background-size: cover;
     background-position-y: 20%;
+    margin: 2% 8% 2% 7%;
+
 }
 
 .slider-scss {
     height: 100%;
     position: relative;
+    
 }
 
 .counter {
@@ -38,7 +41,7 @@
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    left: 32px;
+    left: 100px;
     color: #FFF;
     z-index: 1;
     cursor: pointer;
@@ -48,7 +51,7 @@
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    right: 32px;
+    right: -30px;
     color: #FFF;
     z-index: 1;
     cursor: pointer;
@@ -60,7 +63,7 @@ main {
 }
 
 .title-location-tags {
-    margin-top: 6%;
+    margin: 2% 8% 2% 7%;
 }
 
 .title {
@@ -76,7 +79,7 @@ main {
 .location {
     margin-top: 4%;
     p {
-        color: #FF6060;
+        color: #000;
         font-weight: 500;
         font-size: 1rem;
     }
@@ -103,7 +106,7 @@ main {
     margin-top: 2%;
 }
 
-.host-name-photo {
+.host-name-picture {
     display: flex;
     justify-content: space-between;
 }
@@ -120,7 +123,7 @@ main {
     }
 }
 
-.host-photo {
+.host-picture {
     width: 64px;
     height: 64px;
     
@@ -132,15 +135,15 @@ main {
 }
 
 .rating {
-    margin-top: 39%;
+    margin: 4% 4% 1% 12%;
     display: flex;
     justify-content: space-between;
     img {
-        margin-left: -20%;
+        margin-left: -5%;
     }
 }
 
 .description-equipements {
     display: flex;
-    margin: 0% 0% 3% 7%;
+    margin: 2% -4% 2% 12%;
 }
