@@ -1,6 +1,20 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    // display: flex;
+    // flex-direction: column;
+    // width: 1440px;
+    // justify-content: center;
+    max-width: 1258px;
+    padding-top: 40px;
+    margin: 0 15%;
+  }
+
 .error{
     color: #FF6060;
     height: 500px;
+    margin-left: 10%;
+
 }
 
 .error-404{
@@ -31,4 +45,8 @@
     font-size: 18px;
     font-weight: 500;
 
+}
+
+main {
+    margin-left: 10%;
 }

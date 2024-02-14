@@ -1,8 +1,10 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  display: flex;
-  flex-direction: column;
-  width: 1440px;
-  justify-content: center;
-
+  // display: flex;
+  // flex-direction: column;
+  // width: 1440px;
+  // justify-content: center;
+  max-width: 1258px;
+  padding-top: 40px;
+  margin: 0 15%;
 }
