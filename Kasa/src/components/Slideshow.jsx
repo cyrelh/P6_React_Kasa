@@ -1,10 +1,9 @@
 // On importe les dépendances nécessaires
-import React from 'react'
 import { useState } from "react"
 import ArrowBack from '../assets/arrow_back.png'
 import ArrowForward from '../assets/arrow_forward.png'
 
-function Slideshow(slides) { //Déclaration du composant fonctionnel 
+function Slideshow({slides}) { //Déclaration du composant fonctionnel ATTENTION OUBLI de l'accolade
   const [currentIndex, setCurrentIndex] = useState(0); // [currentIndex, setCurrentIndex] :"destructuring" --> déclare respectivement la valeur actuelle de l'état et une fonction pour mettre à jour cette valeur
   // hook useState(0) : Cela initialise la variable d'état currentIndex avec une valeur initiale de 0. Cela signifie que lorsque le composant est monté pour la première fois, currentIndex aura la valeur 0.
 
