@@ -11,6 +11,7 @@
     background-color: #ff6060;
     cursor: pointer;
     height: 40px;
+    padding-bottom: 6px;
 
 }
 
@@ -20,6 +21,8 @@
     transform: rotate(360deg);
     cursor: pointer;
     height: 40px;
+    padding-top: 3px;
+
 
 }
 
@@ -66,7 +69,7 @@
 
 .content{
     color: #000;
-    list-style: none;
+    list-style: none; // suppression des puces dans liste
     line-height: 150%;
     font-weight: 500;
     padding-top: 8px;
