@@ -22,7 +22,7 @@ function ApartmentPage() {
         .then((data) => {  // Une fois les données récupérées
           let log = data.find(l => l.id === id) // Trouve l'objet logement correspondant à l'ID extrait de l'URL
           console.log(log) 
-          setLogement(log) //Met à jour l'état logement avec les données trouvées à l'aide de setLogement(log)
+          setLogement(log) //Met à jour l'état logement avec les données trouvées via setLogement(log)
         })
         .catch((error) => console.error(error)) // Gère les erreurs de requête
     },[id]); // Déclenche l'effet uniquement lorsque l'ID change
