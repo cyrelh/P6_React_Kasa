@@ -79,6 +79,8 @@
     max-height: 0;
     opacity: 0;
     overflow: hidden;
+    height: 255px;
+    text-align: justify;
     transition:
         max-height 3s ease,
         opacity 1s ease; /* Transition pour max-height et opacity */
@@ -86,7 +88,8 @@
 
 .show{
     opacity: 1; /* Changement d'opacité pour rendre visible le contenu */
-    max-height: 200px; /* Valeur maximale de la hauteur*/
+    max-height: 500px; /* Valeur maximale de la hauteur*/
+    height: 255px;
   }
 
   @media (max-width: 992px) {
