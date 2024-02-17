@@ -23,3 +23,14 @@ h1 {
     font-weight: 700;
     color: white;
 }
+
+@media screen and (width <=768px)  {
+    .banner{
+        height: 200px;
+        h1{
+            top: 26%;
+            bottom: 26%;
+            font-size: 2.5rem;
+        }
+    }
+}

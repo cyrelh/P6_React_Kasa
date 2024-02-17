@@ -33,8 +33,18 @@ header{
     }
     &:hover{
         text-decoration: underline;
-        color: #FF6060;
+        color: #000;
 
     }
 }
+}
+
+@media screen and (width <=768px)  {
+    .nav-links a {
+        text-transform: uppercase; // LETTRE MAJUSCULE
+    }
+
+    .logo-kasa {
+        width: 40%;
+    }
 }

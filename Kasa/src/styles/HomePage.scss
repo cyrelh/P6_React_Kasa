@@ -19,7 +19,17 @@
     margin-bottom: 11%;
 }
 
-// main {
-//     margin-left: 0%;
 
-// }
+@media screen and (width <=768px)  {
+    .conteneur-logements{
+        grid-template-columns: repeat(1, 1fr);
+        background-color: #FFFFFF;
+    }
+    .conteneur-logements > * {
+        max-width: none;
+    }
+    .click-card {
+        width: 102%;
+    }
+
+}
