@@ -63,7 +63,7 @@ main {
 }
 
 .title-location-tags {
-    margin-top: 2%;
+    margin:0;
 }
 
 .title {
@@ -137,11 +137,11 @@ main {
 }
 
 .rating {
-    margin: 4% 4% 1% 12%;
+    margin: 0;
     display: flex;
     justify-content: space-evenly;
     img {
-        margin-left: -5%;
+        margin-right: 5px;
     }
 }
 
