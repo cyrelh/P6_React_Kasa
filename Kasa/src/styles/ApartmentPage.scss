@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     margin: 2% 8% 2% 7%;
+    
 }
 
 // .conteneur-scss {
@@ -35,6 +36,9 @@
     top: 80%;
     color: #FFF;
     font-weight: 500;
+    @media screen and (width <= 768px) {
+        display: none;
+       } 
 }
 
 .left {
@@ -45,6 +49,10 @@
     color: #FFF;
     z-index: 1;
     cursor: pointer;
+
+    @media screen and (width <= 768px) {
+        width: 24px;
+     } 
 }
 
 .right {
@@ -55,11 +63,17 @@
     color: #FFF;
     z-index: 1;
     cursor: pointer;
+    @media screen and (width <= 768px) {
+    width: 24px;
+ } 
 }
 
 main {
     display: flex;
     justify-content: space-between;
+    @media screen and (width <= 768px) {
+        display: block;
+} 
 }
 
 .title-location-tags {
@@ -86,12 +100,18 @@ main {
         font-size: 18px;
         margin-top: 0;
     }
+    @media screen and (width <= 768px) {
+        margin-top: 3%;
+    } 
 }
 
 .tags {
     display: flex;
     // margin-top: 5%;
     flex-wrap: nowrap;
+    @media screen and (width <= 768px) {
+     margin-top: 4%;
+}
 }
 
 .tag {
@@ -107,6 +127,11 @@ main {
 
 .host-rating {
     margin-top: 0;
+    @media screen and (width <= 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;   
+}
 }
 
 .host-name-picture {
@@ -143,7 +168,11 @@ main {
     display: flex;
     justify-content: space-evenly;
     img {
-        margin-right: 5px;
+        margin-left: 10px;
+}
+    @media screen and (width <= 768px) {
+    margin-top: 0;
+    align-items: center;  
     }
 }
 
@@ -152,41 +181,7 @@ main {
     // justify-content: space-between;
     // align-items: center;
     gap: 5rem;
-}
-
-@media screen and (width <=768px)  {
-    .counter {
-        display: none; // DISPARITION DU COMPTEUR DE PIED DE PAGE
-    }
-
-    main {
-        display: block;
-    }
-
-    .location {
-        margin-top: 3%;
-    }
-
-    .tags {
-        margin-top: 4%;
-    }
-
-    .host-rating {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-    }
-
-    .rating {
-        margin-top: 0;
-        align-items: center;
-        img {
-            margin-left: 10px;
+    @media screen and (width <= 768px) {
+    display: block;
         }
-    }
-
-    .description-equipements {
-        display: block;
-    }
 }
-

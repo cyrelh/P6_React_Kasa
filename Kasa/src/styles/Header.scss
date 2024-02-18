@@ -1,16 +1,27 @@
 header{
     width: 1240px;
     // margin-left: 10%;
+    @media screen and (width <= 768px) {
+        height: 200px;
+        width: 650px;
+}
  
 }
 
 .logo-kasa{
     margin-top: 32px;
+    @media screen and (width <= 768px) {
+        width: 40%;
+}
 }
 
 .under-header{
     display: flex;
     justify-content: space-between;
+    @media screen and (width <= 768px) {
+        width: 700px;
+        margin-left: 4%;
+    }
 }
 
 .nav-links{
@@ -23,10 +34,19 @@ header{
     font-weight: 500;
     font-size: 24px;
     color: #FF6060;
+    @media screen and (width <= 768px) {
+        width: 46%;
+        gap: 9%;
+
+    }
    & a {
     text-decoration: none;
     color: #000;
     flex-wrap: nowrap;
+
+    @media screen and (width <= 768px) {
+        text-transform: uppercase; // passage à tout en majuscule des liens
+}
 
     &.active {
         text-decoration: underline;
@@ -37,14 +57,4 @@ header{
 
     }
 }
-}
-
-@media screen and (width <=768px)  {
-    .nav-links a {
-        text-transform: uppercase; // LETTRE MAJUSCULE
-    }
-
-    .logo-kasa {
-        width: 40%;
-    }
 }

@@ -2,7 +2,6 @@ import { NavLink } from 'react-router-dom'// Importation du composant NavLink de
 import Kasa from '../assets/logo-kasa.png'
 import '../styles/Header.scss'
 
-
 function Header() {
   return (
     <header className='header'>

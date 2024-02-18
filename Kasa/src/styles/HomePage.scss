@@ -4,12 +4,22 @@
     width: 1240px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 3rem;
     justify-items: center;
     padding: 30px 20px 0 20px;
-    margin: 1% 4% 2% 2%;
+    margin: 0% 0% 0% 0%;
 
-    
+
+@media screen and (width <= 768px) {
+    grid-template-columns: repeat(1, 1fr);
+        background-color: #FFFFFF;
+        width: 384px;
+        margin-bottom: 0;
+        gap: 10rem;
+        margin-left: -2%;
+
+
+}
 }
 
 .click-card{
@@ -17,19 +27,11 @@
     width: 340px;
     position: relative;
     margin-bottom: 11%;
-}
 
-
-@media screen and (width <=768px)  {
-    .conteneur-logements{
-        grid-template-columns: repeat(1, 1fr);
-        background-color: #FFFFFF;
+    @media screen and (width <= 768px) {
+            width: 335px;
+            height: 255px;
+            margin-bottom: 0;
     }
-    .conteneur-logements > * {
-        max-width: none;
-    }
-    .click-card {
-        width: 102%;
-    }
-
+    
 }
