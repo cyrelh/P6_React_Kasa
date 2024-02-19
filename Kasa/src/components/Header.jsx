@@ -6,7 +6,9 @@ function Header() {
   return (
     <header className='header'>
         <div className='under-header'>
-            <img src={Kasa} alt="Logo de Kasa" className='logo-kasa' />  {/* Balise img pour afficher le logo Kasa avec class CSS */}
+          <NavLink to="/">
+                <img src={Kasa} alt="Logo de Kasa" className='logo-kasa' />
+          </NavLink>
             <nav className="nav-links">
                     <NavLink className={({ isActive }) => isActive ? "active" : "accueil"} to="/" >Accueil</NavLink> 
                     {/*isActive = fonction qui retourne true si le lien est actif, cad s'il est au chemin de l'URL actuel. */}

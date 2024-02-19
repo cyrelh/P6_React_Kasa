@@ -9,9 +9,9 @@ footer{
     margin-top: 3%;
     // flex-grow: 1;
     // margin-left: 10%;
-    @media screen and (width <= 768px) {
+    @media (max-width: 768px) {
         height: 250px;
-        width: 750px;
+        width: 100%;
         margin-top: 42%;
 
 }

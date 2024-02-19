@@ -36,7 +36,7 @@
     top: 80%;
     color: #FFF;
     font-weight: 500;
-    @media screen and (width <= 768px) {
+    @media (max-width: 768px) {
         display: none;
        } 
 }
@@ -50,7 +50,7 @@
     z-index: 1;
     cursor: pointer;
 
-    @media screen and (width <= 768px) {
+    @media (max-width: 768px) {
         width: 24px;
      } 
 }
@@ -63,7 +63,7 @@
     color: #FFF;
     z-index: 1;
     cursor: pointer;
-    @media screen and (width <= 768px) {
+    @media (max-width: 768px) {
     width: 24px;
  } 
 }
@@ -71,7 +71,7 @@
 main {
     display: flex;
     justify-content: space-between;
-    @media screen and (width <= 768px) {
+    @media (max-width: 768px) {
         display: block;
 } 
 }
@@ -100,7 +100,7 @@ main {
         font-size: 18px;
         margin-top: 0;
     }
-    @media screen and (width <= 768px) {
+    @media (max-width: 768px) {
         margin-top: 3%;
     } 
 }
@@ -109,7 +109,7 @@ main {
     display: flex;
     // margin-top: 5%;
     flex-wrap: nowrap;
-    @media screen and (width <= 768px) {
+    @media (max-width: 768px) {
      margin-top: 4%;
 }
 }
@@ -127,7 +127,7 @@ main {
 
 .host-rating {
     margin-top: 0;
-    @media screen and (width <= 768px) {
+    @media (max-width: 768px) {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;   
@@ -170,7 +170,7 @@ main {
     img {
         margin-left: 10px;
 }
-    @media screen and (width <= 768px) {
+@media (max-width: 768px) {
     margin-top: 0;
     align-items: center;  
     }
@@ -181,7 +181,7 @@ main {
     // justify-content: space-between;
     // align-items: center;
     gap: 5rem;
-    @media screen and (width <= 768px) {
+    @media (max-width: 768px) {
     display: block;
         }
 }
