@@ -4,6 +4,13 @@
     margin: 2% 8% 2% 7%;
     
 }
+@media (max-width: 768px) {
+
+.wrapper{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+}
 
 // .conteneur-scss {
 //     width: 100%;
@@ -13,14 +20,16 @@
 // }
 
 .slide-scss {
-    width: 1240px;
+    width: 100vw;
     height: 415px;
     border-radius: 25px;
     background-position: center;
     background-size: cover;
     background-position-y: 20%;
     margin: 2% 0% 2% 0%;
-
+    @media (max-width: 768px) {
+        width: 92vw;
+    }
 }
 
 .slider-scss {

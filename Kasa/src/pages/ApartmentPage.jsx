@@ -32,7 +32,7 @@ function ApartmentPage() {
     } else { // Sinon, affiche les données du logement
 
   return (
-    <div>
+    <div className='wrapper'>
             <div className="conteneur">
               <div className="conteneur-scss"> 
                 {logement && logement.pictures && (<Slideshow slides={logement.pictures}/> // si logement est défini et si contient une propriété pictures, le composant Slideshow sera rendu avec les images spécifiées dans logement.pictures
