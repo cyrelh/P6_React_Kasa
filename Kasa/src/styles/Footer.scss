@@ -1,6 +1,9 @@
 .footer-img-kasa{
     background-color: #000000;
     padding-bottom: 20%;
+    @media (max-width: 768px) {
+        padding-bottom: 0;
+    }
 }
 
 footer{
@@ -10,9 +13,9 @@ footer{
     // flex-grow: 1;
     // margin-left: 10%;
     @media (max-width: 768px) {
-        height: 250px;
+        height: 190px;
         width: 100%;
-        margin-top: 42%;
+        margin-top: 34%;
 
 }
 
@@ -30,5 +33,10 @@ footer{
     justify-items: center;
     p{
     color: #FFF;
+    @media (max-width: 768px) {
+        padding-left: 26%;
+        padding-right: 4%;
+        font-size: 12px;
+    }
     }
 }

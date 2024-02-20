@@ -7,7 +7,7 @@
     position: relative;
     width: 1240px;
     @media (max-width: 768px) {
-        height: 200px;
+        height: 80px;
         width: 100%;
         padding-left: 4%;
         padding-right: 4%;
@@ -20,7 +20,7 @@
     border-radius: 25px;
     filter: brightness(60%);
     @media (max-width: 768px) {
-        height: 200px;
+        height: 111px;
         width: 100%;
     }
 }
@@ -35,9 +35,9 @@ h1 {
 
     @media (max-width: 768px) {
         top: 10%;
-        font-size: 48px;
-        left: 2%;
-        margin-left: 2%;
+        font-size: 24px;
+        margin-left: 7%;
+        margin-right: 7%;
 
 }
 }
