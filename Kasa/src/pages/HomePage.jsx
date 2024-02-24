@@ -20,7 +20,7 @@ function HomePage() {
 },[])
 
   return (
-    <div>
+    <div>      
               <Banner img={ImgHomeBanner} title='Chez vous, partout et ailleurs'/>       {/* Rendu du composant Banner avec l'image et le titre spécifiés */}
               <main>
                 <div className='conteneur-logements'>

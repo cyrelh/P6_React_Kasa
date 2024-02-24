@@ -1,13 +1,13 @@
 .conteneur-logements{
     background-color: #F6F6F6;
     border-radius: 25px;
-    width: 1240px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    gap: 1px;
     justify-items: center;
-    padding: 30px 20px 0 20px;
-    margin: 0% 0% 0% 0%;
+    padding: 40px 20px 15px 37px;
+    // margin: 0% 0% 0% 0%;
 
 
     @media (max-width: 768px) {
@@ -15,7 +15,7 @@
         background-color: #FFFFFF;
         width: 100%;
         margin-bottom: 0;
-        gap: 10rem;
+        gap: 1rem;
         padding-left: 4%;
 
 
@@ -23,10 +23,10 @@
 }
 
 .click-card{
-    height: 340px;
-    width: 340px;
+    height: 39vh;
+    width: 19vw;
     position: relative;
-    margin-bottom: 11%;
+    margin-bottom: 7%;
 
     @media (max-width: 768px) {
             width: 100%;

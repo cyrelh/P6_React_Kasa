@@ -1,11 +1,11 @@
 .banner {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     border-radius: 25px;
     margin: 5% 0% 5% 0%;
     height: 223px;
     position: relative;
-    width: 1240px;
+    // width: 78vw;
     @media (max-width: 768px) {
         height: 80px;
         width: 100%;
@@ -16,7 +16,7 @@
 
 .img-banner {
     object-fit: cover;
-    width: 1240px;
+    width: 100%;
     border-radius: 25px;
     filter: brightness(60%);
     @media (max-width: 768px) {
@@ -26,6 +26,7 @@
 }
 
 h1 {
+    margin-left: 17%;
     position: absolute;
     z-index: 1;
     top: 20%;
@@ -36,8 +37,9 @@ h1 {
     @media (max-width: 768px) {
         top: 10%;
         font-size: 24px;
-        margin-left: 7%;
-        margin-right: 7%;
+        margin-left: -50%;
+        // margin-left: 7%;
+        // margin-right: 7%;
 
 }
 }
