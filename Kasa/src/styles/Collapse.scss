@@ -103,7 +103,7 @@
 .show{
     opacity: 1; /* Changement d'opacité pour rendre visible le contenu */
     max-height: 500px; /* Valeur maximale de la hauteur*/
-    height: 255px;
+    height: 100%;
     @media (max-width: 768px) {
         font-size: 14px;
         height: 100%;

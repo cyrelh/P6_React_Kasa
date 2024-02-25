@@ -37,9 +37,16 @@ h1 {
     @media (max-width: 768px) {
         top: 10%;
         font-size: 24px;
-        margin-left: -50%;
+        margin-left: 4%;
         // margin-left: 7%;
         // margin-right: 7%;
 
 }
+}
+
+.title-text br{
+    display: none;
+    @media (max-width: 768px) {
+        display: block;
+    }
 }
