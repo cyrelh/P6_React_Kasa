@@ -2,7 +2,7 @@
 import Banner from '../components/Banner.jsx'
 import ImgAboutBanner from '../assets/about-banner.png' // Import de l'image de la bannière
 // import Footer from '../components/Footer.jsx'
-import Collapse from '../components/Collapse.jsx' //Import du composant Collapse
+import Collapse2 from '../components/Collapse2.jsx' //Import du composant Collapse
 
 
 
@@ -14,7 +14,7 @@ function About() {
     <Banner img={ImgAboutBanner}/>
     <div className='conteneur-collapse'> {/* Début de la div pour contenir les composants Collapse */}
       {data.map((item) => ( // on utilise la méthode map pour parcourir chaque élément du tableau data
-        <Collapse key={item.name} name={item.name} para={item.reponse} /> 
+        <Collapse2 key={item.name} name={item.name} para={item.reponse} /> 
       // Pour chaque élément, on crée composant Collapse en passant le nom de la section (item.name) comme titre et le contenu de la section (item.reponse) comme propriété au composant.
       ))}
     </div>

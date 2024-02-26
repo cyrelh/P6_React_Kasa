@@ -1,4 +1,4 @@
-.all-collapse{
+.all-collapse2{
     // margin-left: 5%;
     // margin-right: 1%;
     width: 80%;
@@ -9,7 +9,7 @@
 }
 }
 
-.collapse{
+.collapse2{
     transition-duration: 0.5s;
     transform: rotate(180deg);
     background-color: #ff6060;
@@ -19,7 +19,7 @@
 
 }
 
-.uncollapse{
+.uncollapse2{
     background-color: #FF6060;
     transition-duration: 0.5s;
     transform: rotate(360deg);
@@ -35,7 +35,7 @@
 
 }
 
-.conteneur-collapse{
+.conteneur-collapse2{
     display: grid;
     justify-items: center;
     margin: -2% 0% 3% 0%;
@@ -46,7 +46,7 @@
 
 }
 
-.collapse-content{
+.collapse-content2{
     background-color: #F6F6F6;
     border-radius: 5px;
     margin: 20px 0px;
@@ -57,7 +57,7 @@
 }
 
 
-.collapse-banner{
+.collapse-banner2{
     background-color: #FF6060;
     height: 48px;
     border-radius: 5px;
@@ -67,7 +67,7 @@
 
 }
 
-.collapse-banner-name{
+.collapse-banner-name2{
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -81,7 +81,7 @@
     }
 }
 
-.content{
+.content2{
     color: #000;
     list-style: none; // suppression des puces dans liste
     line-height: 150%;
@@ -100,11 +100,10 @@
         opacity 1s ease; /* Transition pour max-height et opacity */
   }
 
-.show{
+.show2{
     opacity: 1; /* Changement d'opacité pour rendre visible le contenu */
-    max-height: 499px; /* Valeur maximale de la hauteur*/
-    height:325px;
-    // height: 420px;
+    max-height: 500px; /* Valeur maximale de la hauteur*/
+    height: 100%;
     @media (max-width: 768px) {
         font-size: 14px;
         height: 100%;
