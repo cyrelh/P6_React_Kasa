@@ -9,6 +9,7 @@
 .wrapper{
     padding-left: 4%;
     padding-right: 4%;
+    padding-bottom: 2%;
 }
 }
 
@@ -109,7 +110,7 @@ main {
         margin-top: 0;
     }
     @media (max-width: 768px) {
-        margin-top: 3%;
+        margin-top: 5%;
     } 
 }
 
@@ -119,6 +120,7 @@ main {
     flex-wrap: nowrap;
     @media (max-width: 768px) {
      margin-top: 4%;
+     margin-bottom: 4%;
      gap :8px;
 }
 }
@@ -154,7 +156,8 @@ main {
 .host-name-picture {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
+    margin-top: 0%;
 }
 
 .host-name {
@@ -168,7 +171,7 @@ main {
         font-size: 18px;
                 @media (max-width: 768px) {
             font-size: 15px;
-            padding-top: 24px;
+            padding-top: 63px;
         }
     }
 }
@@ -210,6 +213,6 @@ main {
     @media (max-width: 768px) {
     display: block;
     width: 93vw;
-    height: 51vh;
+    height: 75vh;
         }
 }
