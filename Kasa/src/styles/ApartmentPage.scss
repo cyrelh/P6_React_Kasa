@@ -12,13 +12,6 @@
 }
 }
 
-// .conteneur-scss {
-//     width: 100%;
-//     margin-right: 4%;
-//     margin-left: 4%;
-//     height: 415px;
-// }
-
 .slide-scss {
     width: 65vw;
     height: 415px;
@@ -136,7 +129,8 @@ main {
     padding: 6px 39px;
     white-space: nowrap;
     border-radius: 10px;
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 14px;
     margin-right: 1%;
     margin-top: 1%;
     @media (max-width: 768px) {
@@ -153,6 +147,7 @@ main {
     justify-content: space-between;
     flex-direction: row-reverse;
     height: 7vh;
+    margin-bottom: 10%;
 }
 }
 
@@ -209,13 +204,12 @@ main {
 }
 
 .description-equipements {
+    margin-top: 3%;
     display: flex;
-    // justify-content: space-between;
-    // align-items: center;
     gap: 5rem;
     @media (max-width: 768px) {
     display: block;
-    width: 96vw;
+    width: 93vw;
     height: 51vh;
         }
 }
