@@ -28,6 +28,7 @@
             width: 25px;
             height: 25px;
             transition: transform 0.5s;
+            cursor: pointer;
             &.rotated {
                 transform: rotate(-180deg);
               }
