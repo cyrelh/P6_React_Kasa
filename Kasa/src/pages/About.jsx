@@ -7,7 +7,7 @@ import '../styles/About.scss'
 
 
 function About() {
-
+  // Définition des textes pour chaque section
   const textFiabilite = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
   const textRespect = "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
   const textService = "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
@@ -15,8 +15,9 @@ function About() {
 
   return (
     <div className="about-div">
-      <Banner img={ImgAboutBanner}></Banner>
+      <Banner img={ImgAboutBanner}></Banner>       {/* Rendu du composant Banner avec l'image spécifiée */}
       <div className='values'>
+                {/* Rendu du composant Collapse pour chaque section avec titre et texte spécifiés */}
       <Collapse titre={'Fiabilité'} texte={textFiabilite}></Collapse>
       <Collapse titre={'Respect'} texte={textRespect}></Collapse>
       <Collapse titre={'Service'} texte={textService}></Collapse>

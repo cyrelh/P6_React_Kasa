@@ -13,8 +13,9 @@ function ApartmentPage() {
   const [logement, setLogement] = useState({}) // on déclare un état local nommé logement avec une valeur initiale de {} (un objet vide)
   //logement va contenir les données récupérées à partir de la requête fetch
   
-  const {id} = useParams(); // hook useParams permet d'extraire les paramètres d'URL
-  //ici id est extrait des paramètres d'URL. Par exemple, si l'URL est "/logement/123", id contiendra la valeur "123"
+  const {id} = useParams(); // on utilise hook useParams pour extraire les paramètres d'URL ici 'id'
+  //Par exemple, si l'URL est "/logement/123", id contiendra la valeur "123"
+
     useEffect(() => { // ce hook est déclenché chaque fois que la valeur de id change
       //Dans ce cas, il déclenche une requête fetch pour récupérer les données du fichier "/logements.json" en fonction de l'ID extrait de l'URL
         fetch("/logements.json")
@@ -24,7 +25,7 @@ function ApartmentPage() {
           console.log(log) 
           setLogement(log) //Met à jour l'état logement avec les données trouvées via setLogement(log)
         })
-        .catch((error) => console.error(error)) // Gère les erreurs de requête
+        .catch((error) => console.error(error)) // Gère les erreurs éventuelles de requête
     },[id]); // Déclenche l'effet uniquement lorsque l'ID change
 
     if(logement === undefined) { //Si aucun logement correspondant à l'ID n'est trouvé
@@ -35,19 +36,19 @@ function ApartmentPage() {
     <div className='wrapper'>
             <div className="conteneur">
               <div className="conteneur-scss"> 
-                {logement && logement.pictures && (<Slideshow slides={logement.pictures}/> // si logement est défini et si contient une propriété pictures, le composant Slideshow sera rendu avec les images spécifiées dans logement.pictures
+                {logement && logement.pictures && (<Slideshow slides={logement.pictures}/> // si logement est défini et si contient une pictures, alors on affiche Slideshow avec images
                 //(opé logique && qui retourne la dernière valeur évaluée ==> si logement est défini et s'il contient une propriété pictures
-                //Si c'est le cas, l'expression retourne la valeur de logement.pictures ) -->donc si true cela rend le composant Slideshow avec les propriétés slides définies sur logement.pictures
+                //Si c'est le cas, l'expression retourne la valeur de logement.pictures )
                 )} 
               </div>
             </div>
             <main>
               <div className="title-location-tags">
                 <div className="title">
-                  <h2>{logement && logement.title}</h2> {/* affiche un élément <h2> avec le titre du logement uniquement si l'objet logement est défini ET s'il contient une propriété title */}
+                  <h2>{logement && logement.title}</h2> {/* affiche un élément <h2> avec le titre du logement uniquement si l'objet logement est défini */}
                 </div>
                 <div className="location">
-                  <p>{logement && logement.location}</p> {/* affiche <p> avec l'emplacement du logement uniquement si l'objet logement est défini ET s'il contient une propriété location */}
+                  <p>{logement && logement.location}</p> {/* affiche <p> avec l'emplacement du logement uniquement si l'objet logement est défini */}
                 </div>
                 <div className="tags">
                   {logement && logement.tags && logement.tags.map(tag => {// afiche liste de tags pour le logement uniquement si l'objet logement est défini, s'il contient une propriété tags, 
@@ -61,8 +62,7 @@ function ApartmentPage() {
               <div className="host-rating">
                 <div className="host-name-picture">
                   <div className="host-name">
-                    <p>{logement && logement.host && logement.host.name}</p> {/* affiche <p> avec le nom de l'hôte uniquement si objet logement est défini, s'il contient une propriété host, 
-                    ET si logement.host est défini */}
+                    <p>{logement && logement.host && logement.host.name}</p> {/* affiche <p> avec le nom de l'hôte uniquement si objet logement est défini, et s'il contient une propriété host */}
                   </div>
                   <div className="host-picture">
                     <img src={logement && logement.host && logement.host.picture} alt="profile-picture" /> {/* affiche <img> avec l'image de profil de l'hôte uniquement si l'objet logement est défini, 
@@ -70,15 +70,13 @@ function ApartmentPage() {
                   </div>
                 </div>
                 <div className="rating">
-                  <Rating rate={logement && logement.rating} /> {/* affiche composant Rating avec la note attribuée au logement uniquement si l'objet logement est défini et s'il contient une propriété rating. */}
+                  <Rating rate={logement && logement.rating} /> {/* affiche composant Rating avec la note attribuée au logement uniquement si l'objet logement est défini et s'il contient une propriété rating */}
                 </div>
               </div>
             </main>
             <div className="description-equipements">
-            <Collapse titre={'Description'} texte={logement.description}></Collapse>
-        <Collapse titre={'Équipements'} texte={logement.equipments}></Collapse>
-
-
+            <Collapse titre={'Description'} texte={logement.description}></Collapse>  {/* affiche le composant Collapse avec la description du logement */}
+            <Collapse titre={'Équipements'} texte={logement.equipments}></Collapse> {/* idem mais avec les équipements du logement */}
             </div>
 
     </div>

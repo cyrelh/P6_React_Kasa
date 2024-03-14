@@ -1,7 +1,7 @@
 // import Header from '../components/Header.jsx'
 // import Footer from '../components/Footer.jsx'
 import '../styles/ErrorPage.scss'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom' // Importation du composant NavLink depuis 'react-router-dom' pour créer des liens de navigation avec des styles spécifiques
 
 function ErrorPage() {
   return (

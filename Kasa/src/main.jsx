@@ -16,18 +16,17 @@ import '/src/styles/main.scss'
 import Header from '/src/components/Header.jsx'
 import Footer from '/src/components/Footer.jsx'
 
-// Création d'une racine React à l'élément avec l'ID 'root' dans le document
-// Cette méthode crée une racine React pour le rendu, ce qui permet une mise à jour efficace du DOM
+// On crée la racine de l'app React dans l'élément HTML avec l'ID 'root' (pour le rendu ce qui permet une mise à jour efficace du DOM)
 ReactDOM.createRoot(document.getElementById('root')).render(
-  //mode Strict de React pour détecter les problèmes potentiels dans le code
+  //mode Strict de React pour détecter/signaler les problèmes potentiels dans le code
   <React.StrictMode> 
-    <BrowserRouter>            {/* Config du BrowserRouter, qui donne des features de navigation pour l'app */}
-      <Header />
-      <Routes>                  {/* Déf du composant Routes, qui gère les routes de l'app */}
-        <Route path="/" element={<HomePage />} />           {/* Config de Route pour la page d'accueil, rendant le composant HomePage lorsque le chemin est '/' */}
-        <Route path="/about" element={<About />} />          {/* Config de Route pour la page "About", rendant le composant About lorsque le chemin est '/about' */}
-        <Route path="/logement/:id" element={<ApartmentPage/>} />   {/* Config de Route dynamique pour appartement, rendant ApartmentPage qd chemin est à '/apartment/:id', ':id' = paramètre de l'identifiant de l'appartement*/}
-        <Route path="*" element={<ErrorPage />}/>    {/* Config de Route pour tous les autres chemins qui ne correspondent pas aux précédents, rendant le ErrorPage pour gérer les erreurs 404 ou d'autres routes inattendues*/}
+    <BrowserRouter>            {/* utilisé pour configurer les fonctionnalités de navigation de l'app */}
+      <Header />             {/* ajouté à chaque page pour assurer une structure cohérente */} 
+      <Routes>                  {/* définit les différentes routes de l'app */}
+        <Route path="/" element={<HomePage />} />           {/* Chaque <Route> a un chemin (path) et un élément (element) associé. */}
+        <Route path="/about" element={<About />} />          
+        <Route path="/logement/:id" element={<ApartmentPage/>} />   {/* route dynamique pour pages d'appartement et :id comme paramètre pour identifier un appartement spécifique*/}
+        <Route path="*" element={<ErrorPage />}/>    {/* la route '*' correpsond à page Erreur ErrorPage pour gérer les erreurs 404 ou d'autres routes inattendues*/}
       </Routes>
       <Footer />
     </BrowserRouter>
